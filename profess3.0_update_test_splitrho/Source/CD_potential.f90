@@ -140,7 +140,7 @@ FUNCTION CDPotential(psi)
   !WRITE(*,*) CDPotential
   !CDPotential = CT* FFT(CDPotential)*(pi**3)/(2.0_DP * kF0**2 )
   !CDPotential = CT* CDPotential*(pi**3)/(2.0_DP * kF0**2 )
-  CDPotential = CT* CDPotential*(pi**3)/(2.0_DP * kF**2 )
+  CDPotential = CT*2.0_DP* CDPotential*(pi**3)/(2.0_DP * kF**2 )
   !CDPotential = CT0* CDPotential*(pi**3)/(2.0_DP * kF**2 )
   !CDPotential = CT0* CDPotential*(pi**3)/(2.0_DP * kF0**2 )
   !CDPotential = CT* CDPotential*(pi**3)
